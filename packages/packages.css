@@ -42,6 +42,7 @@ main {
     color: white;
     background: #ff5454;
     padding: 8px;
+    z-index: 10;
 }
 
 .package__subtitle {
@@ -62,6 +63,7 @@ main {
 
 #plus {
     background: rgba(213, 255, 220, 0.95);
+    z-index: 0;
 }
 
 #free {
