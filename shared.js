@@ -32,7 +32,7 @@ backdrop.addEventListener("click", function () {
 function closeModal() {
   // backdrop.style.display = "none";
   // modal.style.display = "none";
-  if(modal){
+  if(modal) {
   modal.classList.remove("open");
   }
   backdrop.classList.remove("open");
