@@ -11,6 +11,11 @@ body::-webkit-scrollbar {
     width: 0
 }
 
+main {
+    min-height: calc(100vh - 3.5em - 8rem);
+    margin-top: 3.5rem;
+}
+
 .backdrop {
     position: fixed;
     display: none;
@@ -63,14 +68,14 @@ body::-webkit-scrollbar {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5rem;
+    height: 2.5rem;
     /* width: 20px; */
     display: inline-block;
     vertical-align: middle;
 }
 
 .main-header__brand img {
-    height: 2.5rem;
+    height: 100%;
     /* width: 100%; */
 }
 

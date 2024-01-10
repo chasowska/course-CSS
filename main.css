@@ -21,7 +21,6 @@ body {
     /* background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue 70%, green); */
     width: 100vw;
     height: 45vh;
-    margin-top: 2.75rem;
     /* border: 5px dashed red; */
     position: relative;
 }
