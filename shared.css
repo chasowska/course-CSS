@@ -64,22 +64,18 @@ body::-webkit-scrollbar {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5rem;
-    height: 1.5rem;
     /* width: 20px; */
     display: inline-block;
+    vertical-align: middle;
 }
 
 .main-header__brand img {
-    height: 100%;
-    vertical-align: middle;
+    height: 2.5rem;
     /* width: 100%; */
 }
 
 .main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 122px);
-    vertical-align: middle;
+    display: none;
 }
 
 .main-nav__items {
@@ -125,6 +121,21 @@ body::-webkit-scrollbar {
     border: none;
 }
 
+@media (min-width: 40rem) {
+    .toggle-button {
+        display: none;
+    }
+    .main-header {
+        padding: 0.6rem 1rem;
+    }
+    .main-nav {
+        display: inline-block;
+        text-align: right;
+        width: calc(100% - 44px);
+        vertical-align: middle;
+    }
+}
+
 .main-footer {
     background: black;
     padding: 2rem;
@@ -139,8 +150,8 @@ body::-webkit-scrollbar {
 }
 
 .main-footer__link {
-    display: inline-block;
-    margin: 0 1rem;
+    display: block;
+    margin: 1rem 0;
 }
 
 .main-footer__link a {
@@ -151,6 +162,13 @@ body::-webkit-scrollbar {
 .main-footer__link a:hover,
 .main-footer__link a:active {
     color: #ccc;
+}
+
+@media (min-width: 40rem) {
+    .main-footer__link {
+        display: inline-block;
+        margin: 0 1rem;
+    }
 }
 
 .mobile-nav {
