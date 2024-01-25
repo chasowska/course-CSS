@@ -16,6 +16,7 @@ for (var i = 0; i < selectPlanButtons.length; i++) {
     // backdrop.style.display = "block";
     // modal.className = 'open';// це перезаписує весь список класів
   modal.classList.add("open");
+  backdrop.style.display = "block";
   backdrop.classList.add("open")
   });
 }
@@ -32,18 +33,23 @@ backdrop.addEventListener("click", function () {
 function closeModal() {
   // backdrop.style.display = "none";
   // modal.style.display = "none";
-  if(modal) {
-  modal.classList.remove("open");
+  if (modal) {
+    modal.classList.remove("open");
   }
   backdrop.classList.remove("open");
+  setTimeout(function () {
+    backdrop.style.display = "none";
+  }, 200);
 }
 
 toggleButton.addEventListener('click', function () {
   // mobileNav.style.display = 'block';
   // backdrop.style.display = 'block';
   mobileNav.classList.add('open');
-  backdrop.classList.add('open');
+  backdrop.style.display = "block";
+  setTimeout(function () {
+    backdrop.classList.add('open');
+  }, 10);
 });
-
 
 
